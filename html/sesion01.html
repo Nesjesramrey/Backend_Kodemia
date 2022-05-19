@@ -1,12 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <title>Sesion 01 Backend</title>
+  </head>
+  <body>
+    <!-- Tit Aqui inicia el header-->
+
+    <header id="header">
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Tit Aqui termina el header-->
+
+    <!-- ?Aqui inicia el main. Contenido de la clase -->
+    <main class="maincontainer">
+      <h1>Sesion 01 Backend</h1>
+      <h2>Nodejs</h2>
+      <p>
+        Es un entorno de ejecucion para Javascript construido con el motor V8 de
+        Chrome. Escribimos codigo para qye otros humanos lo lean y lo entiendad
+        para que sea convertido a lenguaje maquina y sea ejecutado.<br>
+        Es mejor un codigo lento pero que se entienda.<br>
+        Como es el compilado de codigo? Un compilador lee todo el codigo, y
+        durante varias etapas valida la sintaxis, tipos y semantica. Si todo
+        esta correcto crea un archivo con las instrucciones en lenguaje maquina.<br>
+        Como es interpretado el codigo. El interprte lee una linea del codigo y
+        valida la sintaxis. Si todo esta correcto convierte la instruccion a
+        lenguaje maquina y se ejecuta. Puede haber errores de ejecucion.
+      
+      <h2>Funcionamiento de NodeJs</h2>
+      <p>
+        V8-Engine (interprete)creado por Google para ejecutar Javascript y Web
+        Assembly(las instrucciones que entiende el navegador).<br>
+        Entorno de ejecucion que permite usar V8 y acceder recursos del sistema
+        operativo.<br>
+        Que no es NodeJs, no es un lenguaje, el lenguaje que se usa sigue siendo
+        Javascript, No es un framework, No es una libreria. Es un entorno de
+        ejecucion
+      
+
+      <h2>Que es un servidor?</h2>
+      <p>
+        Es una computadora o sofware que ofrece un servicio el cual reseulve peticiones de uno o varios clientes.<br>
+        <ul class="titleList">Fisicas
+        <li>Laptop</li>
+        <li>computadora</li>
+        <li>Rack</li>
+        <li>Raspberry Pi</li>
+        <li>Smarphone</li>
+        </ul>
+        
+        
+        <ul>Virtuales
+          <li>Maquina Virtuales</li>
+          <li>Contenedor</li>
+        </ul>
+        
+
+        <ul>Ejemplos de sofware servidores 
+         <li> Servidor Web (HTTP)</li>
+        <li>De bases de datos </li>
+        <li>De archivos (FTP)</li>
+        <li>De correo electronico</li>
+       </ul>
+        
+      </p>
+        <h2>
+          Que es NPM?
+        </h2>
+        <p>
+          Es el administrador de paquetes por defecto de NodeJs 
+          Permite instalar los distintos paquetes de sofware en un proyecto de node.
+          Los paquetes que requiere un proyecto se puede definir en un archivo llamado package.json
+        </p>
+
+      <div id="c224538">
+        <div class="text-row">
+          <div class="table-wrap">
+            <table class="table info-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th><span> Intérprete </span></th>
+                  <th><span> Compilador </span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label="">
+                    <span> Momento en que se traduce el código fuente </span>
+                  </td>
+                  <td data-label="Intérprete">
+                    <span> Durante el tiempo de ejecución del software </span>
+                  </td>
+                  <td data-label="Compilador">
+                    <span> Antes de ejecutar el software </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="">
+                    <span> Procedimiento de traducción </span>
+                  </td>
+                  <td data-label="Intérprete">
+                    <span> Línea por línea </span>
+                  </td>
+                  <td data-label="Compilador">
+                    <span> Siempre todo el código </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label="">
+                    <span> Presentación de errores de código </span>
+                  </td>
+                  <td data-label="Intérprete">
+                    <span> Después de cada línea </span>
+                  </td>
+                  <td data-label="Compilador">
+                    <span> En conjunto, después de toda la compilación </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label=""><span> Velocidad de traducción </span></td>
+                  <td data-label="Intérprete"><span> Alta </span></td>
+                  <td data-label="Compilador"><span> Baja </span></td>
+                </tr>
+                <tr>
+                  <td data-label=""><span> Eficiencia de traducción </span></td>
+                  <td data-label="Intérprete"><span> Baja </span></td>
+                  <td data-label="Compilador"><span> Alta </span></td>
+                </tr>
+                <tr>
+                  <td data-label=""><span> Coste de desarrollo </span></td>
+                  <td data-label="Intérprete"><span> Bajo </span></td>
+                  <td data-label="Compilador"><span> Alto </span></td>
+                </tr>
+                <tr>
+                  <td data-label=""><span> Lenguajes típicos </span></td>
+                  <td data-label="Intérprete">
+                    <span> PHP, Perl, Python, Ruby, BASIC </span>
+                  </td>
+                  <td data-label="Compilador"><span> C, C++, Pascal </span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div id="c224540">
+        <div class="text-row">
+          <div class="table-wrap">
+            <table class="table info-table">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th><span> Ventaja </span></th>
+                  <th><span> Inconveniente </span></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td data-label=""><span> Intérprete </span></td>
+                  <td data-label="Ventaja">
+                    <span>
+                      Proceso de desarrollo sencillo (sobre todo en términos de
+                      depuración)
+                    </span>
+                  </td>
+                  <td data-label="Inconveniente">
+                    <span>
+                      Proceso de traducción poco eficiente y velocidad de
+                      ejecución lenta
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td data-label=""><span> Compilador </span></td>
+                  <td data-label="Ventaja">
+                    <span>
+                      Proporciona al procesador el código máquina completo y
+                      listo para ejecutar
+                    </span>
+                  </td>
+                  <td data-label="Inconveniente">
+                    <span>
+                      Cualquier modificación del código (resolución de errores,
+                      desarrollo del software, etc.) requiere volverlo a
+                      traducir
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ?Aqui finaliza el main. Contenido de la clase -->
+
+    <script type="text/javascript" src="/js/sesion1.js"></script>
+    <!-- tit JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
