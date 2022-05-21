@@ -40,7 +40,7 @@ function wordReverse (string){
     console.log(stringReverse.replace(/,/g,''))
 }
 
-wordReverse('Hola')
+wordReverse('Palabra')
 
 //? Haz una funcion que divida dos numeros a y b. Si b=0 regresa un mensaje de error. Ejemplo: 10/2 -> 5 6/0 -> 'Error"
 //tit Pseudocodigo 
