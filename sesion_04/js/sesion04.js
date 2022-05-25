@@ -24,12 +24,12 @@ function createFile(name, content) {
 createFile("hola.txt", "Mi primer archivo")
 
 //** ReadFile */
-function readFile(name, encoding) {
-    fs.readFile(name, encoding, (err) => {
+function readFile(name) {
+    fs.readFile(name, 'utf8', (err, data) => {
       if (err) {
         console.error("No lo pude leer:", err);
       } else {
-        console.log("Se leyo el archivo! : ",);
+        console.log("Se leyo el archivo! :) ", data);
       }
     });
   }
