@@ -27,7 +27,7 @@ function pintar(muro) {
         setTimeout(() =>{
             muro.pintado = true;
             resolve(muro)
-        }, 2400) ;
+        }, 2000) ;
     })    
 }
 
@@ -37,8 +37,26 @@ const muro = {
     pintado: false,
 };
 
-const promiseConstruir = construir(muro);
-    promiseConstruir.then((muroConstruido) => {
+
+//codigo con una variable definida (promiseConstruir)
+// const promiseConstruir = construir(muro);
+//     promiseConstruir.then((muroConstruido) => {
+//         console.log('Muro actualmente:', muroConstruido);
+        
+//         return aplanar(muroConstruido);
+//     })
+//     .then((muroAplanado) => {
+//         console.log('Muro actualmente', muroAplanado);
+
+//         return pintar(muroAplanado)
+//     })
+//     .then((muroPintado) => {
+//         console.log('Muro actualmente', muroPintado)
+//         console.log('Terminamos el muro')
+//     })
+
+    construir(muro)
+    .then((muroConstruido) => {
         console.log('Muro actualmente:', muroConstruido);
         
         return aplanar(muroConstruido);
