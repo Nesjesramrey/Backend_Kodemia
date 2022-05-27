@@ -14,10 +14,12 @@ async function createFile(name, content) {
 
 async function leerArchivo(name){
 try {
-    await readFile(name)
+    const content = await readFile(name, 'utf8');
     console.log(`Archivo ${name} leido`);
+    console.log('Contenido de archivo:')
+    console.log(content)
 }   catch (error){
-    console.error('No se encontro archivo');
+    console.error('No se pudo  leer archivo');
     console.error(error)
 }
 }
