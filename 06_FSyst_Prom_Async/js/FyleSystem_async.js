@@ -22,10 +22,9 @@ try {
     console.error('No se pudo  leer archivo');
     console.error(error)
 }
-}
+} 
 
 //leerArchivo('prueba.tx')
-
 
 
 async function borrarArchivo(name){
