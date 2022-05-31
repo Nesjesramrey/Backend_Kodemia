@@ -1,0 +1,3 @@
+scripts: Es un diccionario que guarda comandos que son ejecutados durante el ciclo de vida de un proyecto. Ejemplos: test, buil, deploy.
+Dependencies: Son paquetes requeridos para ejecutar el proyecto. Ejemplos: React, Express, styles-components.
+Devdependencies: Son paquetes requeridos para desarrollar el proyecto. Ejemplos: Typescript, Nodemon, Prettier.

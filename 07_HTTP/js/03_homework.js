@@ -33,6 +33,8 @@ const server = http.createServer((request, response) => {
 
     if(URL === '/saludo'){
         response.writeHead(200, {'Content-Type': 'application/json'});
+        //response.writeHead(200, {'Transfer-Encoding': 'compress'});
+        //response.writeHead(200, {'Content-Length': Buffer.byteLength(body)});
         response.write(arrayJson);
     } else{
         response.write("No se que hacer aiuda")
