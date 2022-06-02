@@ -2,26 +2,32 @@
   "koders": [
     {
       "name": "Nestor",
+      "edad": 20,
       "genero": "masculino"
     },
     {
       "name": "Jose",
+      "edad": 15,
       "genero": "masculino"
     },
     {
       "name": "Johantan",
+      "edad": 30,
       "genero": "masculino"
     },
     {
       "name": "Luis",
+      "edad": 25,
       "genero": "masculino"
     },
     {
       "name": "Oscar",
+      "edad": 22,
       "genero": "masculino"
     },
     {
       "name": "Danny",
+      "edad": 35,
       "genero": "masculino"
     }
   ]
