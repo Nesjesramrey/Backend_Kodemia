@@ -11,13 +11,13 @@
       "genero": "masculino"
     },
     {
-      "name": "Johantan",
-      "edad": 30,
+      "name": "Jonhatan",
+      "edad": 20,
       "genero": "masculino"
     },
     {
       "name": "Luis",
-      "edad": 25,
+      "edad": 20,
       "genero": "masculino"
     },
     {
@@ -28,6 +28,21 @@
     {
       "name": "Danny",
       "edad": 35,
+      "genero": "masculino"
+    },
+    {
+      "name": "Chucho",
+      "edad": 23,
+      "genero": "masculino"
+    },
+    {
+      "name": "Aaron",
+      "edad": 22,
+      "genero": "masculino"
+    },
+    {
+      "name": "Alan",
+      "edad": 16,
       "genero": "masculino"
     }
   ]
