@@ -1,47 +1,46 @@
 {
-    "mentores": [
-        {
-            "name": "Alan",
-            "modulo": "HTML CSS",
-            "edad": 28,
-            "genero": "masculino"
-        },
-        {
-            "name": "Ale",
-            "modulo": "Introuccion",
-            "edad": 20,
-            "genero": "femenino"
-        },
-        {
-            "name": "Elvira",
-            "modulo": "Introduccion",
-            "edad": 25,
-            "genero": "femenino"
-        },
-        {
-            "name": "Veronica",
-            "modulo": "SCRUM",
-            "edad": 25,
-            "genero": "femenino"
-        },
-        {
-            "name": "Ivan",
-            "modulo": "Javascript",
-            "edad": 30,
-            "genero": "masculino"
-        },
-        {
-            "name": "Oscar",
-            "modulo": "Backend",
-            "edad": 25,
-            "genero": "masculino"
-        },
-        {
-            "name": "Mariana",
-            "modulo": "UX UI",
-            "edad": 25,
-            "genero": "femenino"
-        }
-       
-    ]
+  "mentores": [
+    {
+      "name": "Alan",
+      "modulo": "HTML CSS",
+      "edad": 28,
+      "genero": "masculino"
+    },
+    {
+      "name": "Ale",
+      "modulo": "Introuccion",
+      "edad": 20,
+      "genero": "femenino"
+    },
+    {
+      "name": "Elvira",
+      "modulo": "Introduccion",
+      "edad": 25,
+      "genero": "femenino"
+    },
+    {
+      "name": "Veronica",
+      "modulo": "SCRUM",
+      "edad": 25,
+      "genero": "femenino"
+    },
+    {
+      "name": "Ivan",
+      "modulo": "Javascript",
+      "edad": 30,
+      "genero": "masculino"
+    },
+    {
+      "name": "Oscar",
+      "modulo": "Backend",
+      "edad": 25,
+      "genero": "masculino"
+    },
+    {
+      "name": "Mariana",
+      "modulo": "UX UI",
+      "edad": 25,
+      "genero": "femenino"
+    }
+  ]
 }

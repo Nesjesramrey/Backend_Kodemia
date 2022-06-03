@@ -1,6 +1,7 @@
 const express = require("express");
-const routerKoders = require("./routers/koders")
-const routerKoder = require("./routers/koder")
+const routerKoders = require("./routers/koders");
+const routerKoder = require("./routers/koder");
+const routerMentores = require("./routers/mentores")
 
 const PORT = 8000;
 
@@ -12,6 +13,7 @@ server.use(express.json());
 
 server.use('/koders', routerKoders);
 server.use('/koder', routerKoder);
+server.use('/mentores', routerMentores);
 
 server.listen(PORT, () => {
   console.log("Servidor ejecutandose");
