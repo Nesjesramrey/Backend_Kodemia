@@ -1,0 +1,47 @@
+ [
+    {
+      "name": "Nestor",
+      "edad": 20,
+      "genero": "masculino"
+    },
+    {
+      "name": "Jose",
+      "edad": 15,
+      "genero": "masculino"
+    },
+    {
+      "name": "Jonhatan",
+      "edad": 20,
+      "genero": "masculino"
+    },
+    {
+      "name": "Luis",
+      "edad": 20,
+      "genero": "masculino"
+    },
+    {
+      "name": "Oscar",
+      "edad": 22,
+      "genero": "masculino"
+    },
+    {
+      "name": "Danny",
+      "edad": 35,
+      "genero": "masculino"
+    },
+    {
+      "name": "Chucho",
+      "edad": 23,
+      "genero": "masculino"
+    },
+    {
+      "name": "Aaron",
+      "edad": 22,
+      "genero": "masculino"
+    },
+    {
+      "name": "Alan",
+      "edad": 16,
+      "genero": "masculino"
+    }
+  ]
