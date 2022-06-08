@@ -20,6 +20,33 @@ const URL = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?retry
 const app = express();
 app.use(express.json());
 
+function crearMiddlware(){
+  console.log('Creando Middlware');
+  return(req, res, next) => {
+  console.log('Middlware fabricado');
+  console.log('Method', req.method);
+  console.log('URL', req.originalUrl);
+
+next();
+  };
+}
+
+
+app.use((req, res, next) => {
+  console.log('Hola desde este otro middleware');
+
+  next();
+})
+app.use(crearMiddlware());
+
+app.get('/',(req, res, next) => {
+  console.log('En middleware de endpoint')
+  res.statusCode = 205;
+  next();
+} , async (req, res) => {
+  res.json({hola:'mundo'});
+})
+
 app.get("/koders", async (req, res) => {
     const koders = await Koder.find({})
     res.json(koders);
