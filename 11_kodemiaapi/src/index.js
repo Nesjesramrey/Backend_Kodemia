@@ -3,7 +3,7 @@ require("dotenv").config();// las variables del .env se agregan a process.env
 const express = require("express");
 const mongoose = require('mongoose');
 
-const Koder = require('./koder.model')
+const Koder = require('./models/koder.model')
 
 const PORT = process.env.PORT;
 
