@@ -18,13 +18,76 @@ const URL = `mongodb+srv://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}?retry
 
 
 const app = express();
+app.use(express.json());
 
 app.get("/koders", async (req, res) => {
     const koders = await Koder.find({})
-
     res.json(koders);
 });
 
+
+//** Get Query params */
+app.get("/koders", async (req, res) => {
+    const koders = await Koder.find({});
+    //console.log(koders)
+  
+    const edad = Number(req.query.edad);
+    const genero = (req.query.genero);
+  
+    let respuesta = koders;
+    console.log("La edad del parametro es:", edad);
+    if (!Number.isNaN(edad)) {
+      respuesta = koders.filter((koder) => koder.edad === edad);
+      console.log("La nueva respuesta es:", respuesta);
+    }
+  
+    if (genero) {
+      console.log("El parametro genero:", genero);
+      respuesta = koders.filter((koder) => koder.genero === genero);
+      console.log("La nueva respuesta es:", respuesta);
+    }
+  
+    res.json(respuesta);
+  });
+
+  //** Funcion POST para crear*/
+app.post("/koders", async (req, res) => {
+    const koder = req.body;
+    console.log(koder)
+  
+    const koders = await Koder.find({});
+  
+    koders.push(koder);
+  
+    await Koder.create(koders);
+  
+    res.status(201);
+    res.json(koders);
+  });
+
+//** Funcion PATCH para actualizar por nombre */
+app.patch("/koders/:nombre", async (req, res) => {
+    //Guardamos el nombre del Koder a cambiar
+    const nombre = req.params.nombre;
+    const koder = req.body;
+  
+    const koders = await Koder.find({});
+  
+    if (nombre === koder.name) {
+      koders.map(function (names) {
+        if (names.name == koder.name) {
+          names.name = koder.name;
+          names.edad = koder.edad;
+          names.genero = koder.genero;
+        }
+      });
+    }
+    // Guardar cambios
+    await Koder.create(koders);
+    //Enviamos respuesta
+    res.status(201); // Estado de creado
+    res.json(koders);
+  });
 
 mongoose
 .connect(URL)
@@ -38,4 +101,6 @@ mongoose
 .catch(err => {
     console.log('error connecting to database', err);
 })
+
+
 
