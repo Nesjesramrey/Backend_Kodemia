@@ -1,10 +1,10 @@
 {
-  "name": "10_kodemiaapi",
+  "name": "11_kodemiaapi",
   "version": "0.0.1",
   "description": "An API for Kodemia",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
